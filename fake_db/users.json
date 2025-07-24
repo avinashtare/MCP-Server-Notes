@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Hari Sharma",
+    "age": 29,
+    "email": "hari.sharma@example.com"
+  },
+  {
+    "id": 2,
+    "name": "Priya Verma",
+    "age": 27,
+    "email": "priya.verma@example.com"
+  },
+  {
+    "id": 3,
+    "name": "Amit Patel",
+    "age": 32,
+    "email": "amit.patel@example.com"
+  },
+  {
+    "id": 4,
+    "name": "Sneha Rao",
+    "age": 25,
+    "email": "sneha.rao@example.com"
+  },
+  {
+    "name": "aviansh tare",
+    "email": "avinashdf@gmail.com",
+    "age": 1243,
+    "id": 5
+  },
+  {
+    "name": "rohan cahwla",
+    "email": "rohanchawla@m.com",
+    "age": 34,
+    "id": 6
+  }
+]
