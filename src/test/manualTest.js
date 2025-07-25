@@ -1,6 +1,6 @@
 const { spawn } = require('child_process');
 
-const mcp = spawn('node', ['../../dist/index.js'], {
+const mcp = spawn('node', ['../../dist/server.js'], {
     stdio: ['pipe', 'pipe', 'pipe']
 });
 
