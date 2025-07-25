@@ -1,12 +1,13 @@
 {
-  "main": "src/index.ts",
+  "main": "src/server.ts",
   "scripts": {
-    "server:dev": "tsx watch src/index.ts",
-    "server:start": "node dist/index.js",
+    "client:dev": "tsx watch src/client.ts",
+    "server:dev": "tsx watch src/server.ts",
+    "server:start": "node dist/server.js",
     "server:build.watch": "tsc --watch",
     "server:build": "tsc",
-    "server:inspect": "npm run server:build && npx @modelcontextprotocol/inspector dist/index.js",
-    "server:inspect:dev": "npm run server:build && set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector dist/index.js"
+    "server:inspect": "npm run server:build && npx @modelcontextprotocol/inspector dist/server.js",
+    "server:inspect:dev": "npm run server:build && set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector dist/server.js"
   },
   "dependencies": {
     "@modelcontextprotocol/inspector": "^0.16.1",

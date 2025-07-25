@@ -170,6 +170,24 @@ server.resource(
  * Adds a user to the database and returns the new user's ID.
  */
 server.tool(
+  "show-users",
+  "this will show all the users",
+  {},
+  {
+    title: "Get Userrs",
+    readOnlyHint: true,
+    destructiveHint: false,
+    idempotentHint: false,
+    openWorldHint: true,
+  },
+  async () => {
+    const users = await readUsers();
+
+    return { content: [{ type: "text", text: JSON.stringify(users) }] };
+  }
+);
+
+server.tool(
   "create-user",
   "This function will create a new user in the database.",
   {
