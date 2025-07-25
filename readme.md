@@ -15,11 +15,19 @@ npm i zod // validation
 #### Running server diffrent mode
 
 - Running Simple mode
-  `node server.js`
+
+  ```js
+  node server.js
+  ```
 
 - Running inspect mode
+
+  it will create a inspect website for you.
+
   ```js
-  "server:inspect:dev": "npm run server:build && set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector dist/server.js"
+  "server:inspect": "npm run server:build && set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector dist/server.js"
+
+  npm run server:inspect
   ```
 
 ## 2.Initialize a basic server

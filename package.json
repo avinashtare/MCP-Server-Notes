@@ -1,7 +1,7 @@
 {
   "main": "src/server.ts",
   "scripts": {
-    "client:dev": "tsx watch src/client.ts",
+    "client:dev": "tsx watch src/cli-client.ts",
     "server:dev": "tsx watch src/server.ts",
     "server:start": "node dist/server.js",
     "server:build.watch": "tsc --watch",
